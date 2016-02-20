@@ -1,0 +1,38 @@
+{
+  "name": "din-framework",
+  "version": "0.1.0",
+  "description": "Framework base",
+  "main": "index.js",
+  "authors": [
+    "Bruno Diniz"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "angularjs",
+    "spa",
+    "javascript"
+  ],
+  "homepage": "https://github.com/ferreiradiniz/din-framework",
+  "moduleType": [],
+  "private": true,
+  "dependencies": {
+    "jquery": "^2.2.0",
+    "angular": "^1.5.0",
+    "angular-sanitize": "^1.5.0",
+    "bootstrap": "^3.3.6",
+    "extras.angular.plus": "^0.9.3",
+    "font-awesome": "^4.5.0",
+    "moment": "^2.11.2"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.5.0",
+    "sinon": "^1.17.3"
+  }
+}
