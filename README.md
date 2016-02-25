@@ -1,8 +1,4 @@
 # din Framework
-<<<<<<< HEAD
-=======
-
->>>>>>> modules
 
 ## Requirements
 

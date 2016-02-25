@@ -1,0 +1,50 @@
+.dinf-title-bar {
+    background-color: white;
+    padding: 0 20px;
+    border-bottom: 2px solid black;
+}
+
+.dinf-title-area {
+    display: inline-block;
+}
+
+.dinf-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+    vertical-align: top;
+    border: 1px solid #999;
+}
+
+.dinf-logo-area {
+    text-align: center;
+}
+
+.dinf-logo-title {
+    color: #111;
+    margin-top: 6px;
+    font-size: 22px;
+}
+
+.dinf-logo-subtitle {
+    font-size: 13px;
+    margin-top: -13px;
+}
+
+.dinf-right-side-controls {
+    line-height: 60px;
+}
+
+.dinf-right-side-controls > div {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .dinf-right-side-controls > div {
+        text-align: right;
+    }
+    .dinf-logo-area {
+        text-align: left;
+    }
+}

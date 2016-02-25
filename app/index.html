@@ -4,18 +4,34 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Din Framework</title>
+    <!-- Fonts para melhor visualizaçao -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="/libs/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/libs/font-awesome/css/font-awesome.min.css">
+    <!-- CSS Being -->
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <link rel="stylesheet" type="text/css" href="../ext-modules/dinFramework/dinFramework.css">
+    <!-- CSS End -->
     <script src="/libs/jquery/dist/jquery.min.js"></script>
     <script src="/libs/angular/angular.js"></script>
+    <!-- din-menu BEGIN -->
+    <script src="/scripts/dinMenu/dinMenu.js"></script>
+    <!-- din-menu END -->
+    <!-- din-dashboard BEGIN -->
+    <script src="/scripts/dinDashboard/dinDashboard.js"></script>
+    <!-- din-dashboard END -->
+    <!-- din-framework BEGIN -->
+    <script src="/scripts/dinFramework/dinFramework.js"></script>
+    <script src="/scripts/dinFramework/dinFrameworkController.js"></script>
+    <script src="/scripts/dinFramework/dinFrameworkDirective.js"></script>
+    <!-- din-framework END -->
+    <script src="./appModule.js"></script>
 </head>
 
-<body>
-    <script src="/scripts/psMenu/dinMenu.js"></script>
-    <script src="/scripts/dinDashboard/dinDashboard.js"></script>
-    <script src="/scripts/dinFramework/dinFramework.js"></script>
-    <script src="./appModule.js"></script>
+<body class="container-fluid">
+    <din-framework title="Din Framework" subtitle="Administrative App" icon-file="images/kayak-icon-flat.png"></din-framework>
 </body>
 
 </html>

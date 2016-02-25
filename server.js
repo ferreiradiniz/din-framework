@@ -6,6 +6,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var compress = require('compression');
 var cors = require('cors');
+var path = require('path');
 // var errorHandler = require('./routes/utils/errorHandler')();
 var favicon = require('serve-favicon');
 // var logger = require('morgan');
@@ -14,7 +15,7 @@ var routes;
 
 var environment = process.env.NODE_ENV;
 
-app.use(favicon(__dirname + '/favicon.ico'));
+app.use(favicon(__dirname + '/server/favicon.ico'));
 app.use(bodyParser.urlencoded({
     extended: true
 }));
@@ -43,15 +44,18 @@ switch (environment) {
         break;
     default:
         console.log('** DEV **');
-        app.use('/libs', express.static('../bower_components'));
-        app.use('/scripts', express.static('../ext-modules'));
-        app.use('/templates', express.static(__dirname + '/*.html'));
+        app.use('/libs', express.static(__dirname + '/bower_components'));
+        app.use('/scripts', express.static(__dirname + '/ext-modules'));
+        app.use('/fonts', express.static(__dirname + '/app/fonts'));
 
-        app.use(express.static('../app'));
+        // app.use('/templates', express.static(__dirname + '/ext-modules'));
+
+        app.use(express.static(path.join(__dirname, '/')));
+        app.use(express.static(__dirname + '/app'));
 
         // app.use(express.static('./'));
         // app.use(express.static('../ext-modules/**/'));
-        app.use('/*', express.static('../app/index.html'));
+        // app.use('/*', express.static(__dirname + '/app/index.html'));
         break;
 }
 

@@ -48,13 +48,24 @@
     "shadow": false,
     "sub": true,
     "supernew": false,
-    "validthis": false,
+    "validthis": true,
     "noyield": false,
 
     "browser": true,
     "node": true,
 
     "globals": {
-        "angular": false
+        "angular": false,
+        "browser": false,
+        "inject": false,
+        "_": false,
+        "driver": false,
+        "protractor": false,
+        "browser": false,
+        "$": false,
+        "$$": false,
+        "element": false,
+        "by": false,
+        "list": false
     }
 }
